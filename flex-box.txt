@@ -2,6 +2,7 @@
   flex-wrap: nowrap | wrap | wrap-reverse;
 }
 .container {
+
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
 }
 .item {
@@ -13,3 +14,19 @@
 
 http://flexbox.malven.co/
 http://jonibologna.com/content/images/flexboxsheet.pdf
+
+  display: flex;
+  display: inline-flex;
+  flex-direction: row;            /* ltr - default */
+  flex-direction: row-reverse;    /* rtl */
+  flex-direction: column;         /* top-bottom */
+  flex-direction: column-reverse; /* bottom-top */
+  flex-wrap: nowrap; /* one-line */
+  flex-wrap: wrap;   /* multi-line */
+  align-items: flex-start; /* vertical-align to top */
+  align-items: flex-end;   /* vertical-align to bottom */
+  align-items: center;     /* vertical-align to center */
+  align-items: stretch;    /* same height on all (default) */
+  justify-content: flex-start; /* horizontal alignment - default */
+  justify-content: flex-end;
+  justify-content: center;
