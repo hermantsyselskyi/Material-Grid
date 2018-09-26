@@ -1,0 +1,15 @@
+.container{
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
+.container {
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+}
+.item {
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+.container {
+  align-items: flex-start | flex-end | center | baseline | stretch;
+}
+
+http://flexbox.malven.co/
+http://jonibologna.com/content/images/flexboxsheet.pdf

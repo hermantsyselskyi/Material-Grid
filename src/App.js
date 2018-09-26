@@ -35,9 +35,9 @@ class App extends Component {
 			<div className="App">
        <div className="whole">
 				<header className="App-header">
-					<AppBar position="static" color="default">
+					<AppBar position="static" >
 						<Paper className='Menubar' className={classes.root}>
-							<Tabs
+							{/* <Tabs
 								value={this.state.value}
 								onChange={this.handleChange}
 								indicatorColor="primary"
@@ -47,7 +47,7 @@ class App extends Component {
 								<Tab label="Item One" />
 								<Tab label="Item Two" />
 								<Tab label="Item Three" />
-							</Tabs>
+							</Tabs> */}
 						</Paper>
 					</AppBar>
 				</header>
