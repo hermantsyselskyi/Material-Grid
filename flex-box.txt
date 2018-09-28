@@ -30,3 +30,5 @@ http://jonibologna.com/content/images/flexboxsheet.pdf
   justify-content: flex-start; /* horizontal alignment - default */
   justify-content: flex-end;
   justify-content: center;
+
+  https://www.layoutit.com/grid
