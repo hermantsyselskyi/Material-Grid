@@ -1,21 +1,21 @@
-// useage
+/* useage
 
-// var confObj={
-//   text:sourceString,
-//   topHeavy:.15,
-//   font:"game",
-//   ctx:context,
-//   x:inset,
-//   y:inset,
-//   w:vw-inset*2,
-//   h:vh-inset*2.5,
-//   stroke0:true,
-//   fill:true,
-//   stroke1:false
-// };
-// textRect(confObj);
+var confObj={
+  text:sourceString,
+  topHeavy:.15,
+  font:"game",
+  ctx:context,
+  x:inset,
+  y:inset,
+  w:vw-inset*2,
+  h:vh-inset*2.5,
+  stroke0:true,
+  fill:true,
+  stroke1:false
+};
+textRect(confObj);
 
-
+*/
 
 function textRect(conf){
   conf.ctx.font="100px "+conf.font;
@@ -30,7 +30,7 @@ function textRect(conf){
   var lineCount=Math.floor((1-.25*conf.topHeavy)*testH/100);
   //console.log(lineCount);
   var lines=[conf.text.split(" ")];
-  for(var l=1; l<lineCount; l++){
+  for(l=1; l<lineCount; l++){
     lines.push([]);
   }
 
@@ -49,7 +49,7 @@ function textRect(conf){
   //console.log(conf.h+' '+atY)
   //console.log(linePad+'='+underflow+'/'+lineCount);
   var linePad=underflow/lineCount;  
-  return drawLines(conf.font, lines, linePad, conf.ctx, conf.x, conf.y, conf.w, conf.h, conf.stroke0, conf.fill, conf.stroke1, conf.color, conf.highlight, );
+  return drawLines(conf.font, lines, linePad, conf.ctx, conf.x, conf.y, conf.w, conf.h, conf.stroke0, conf.fill, conf.stroke1, conf.color, conf.highlight, selectedGlom);
 }
 function longestNum(ctx, lines, topHeavy){
   var longestLineLength=-1;

@@ -12,6 +12,14 @@ import Tab from '@material-ui/core/Tab';
 
 import './jambots';
 
+import React from 'react';
+import {
+  HashRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from 'react-router-dom';
+
 const styles = {
 	root: {
 		flexGrow: 1
@@ -55,6 +63,8 @@ class App extends Component {
 					</header>
 				</div>
 				<div className="middle" />
+				{/* <Link to={}>Sign Up</Link> */}
+				
 			</div>
 		);
 	}
