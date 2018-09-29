@@ -10,6 +10,8 @@ import Grid from '@material-ui/core/Grid';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
+import './jambots';
+
 const styles = {
 	root: {
 		flexGrow: 1
@@ -33,27 +35,26 @@ class App extends Component {
 		const { classes } = this.props;
 		return (
 			<div className="App">
-       <div className="whole">
-				<header className="App-header">
-					<AppBar position="static" >
-						<Paper className='Menubar' className={classes.root}>
-							{/* <Tabs
-								value={this.state.value}
-								onChange={this.handleChange}
-								indicatorColor="primary"
-								textColor="primary"
-								centered
-							>
-								<Tab label="Item One" />
-								<Tab label="Item Two" />
-								<Tab label="Item Three" />
-							</Tabs> */}
-						</Paper>
-					</AppBar>
-				</header>
-          <div className='middle'>
-          </div>
-        </div>
+				<div className="header">
+					<header className="App-header">
+						<AppBar position="static">
+							<Paper className="Menubar" className={classes.root}>
+								<Tabs
+									value={this.state.value}
+									onChange={this.handleChange}
+									indicatorColor="primary"
+									textColor="primary"
+									centered
+								>
+									<Tab label="Item One" />
+									<Tab label="Item Two" />
+									<Tab label="Item Three" />
+								</Tabs>
+							</Paper>
+						</AppBar>
+					</header>
+				</div>
+				<div className="middle" />
 			</div>
 		);
 	}

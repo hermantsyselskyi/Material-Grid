@@ -3,39 +3,24 @@
 	height: 100vh;
 	display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-rows: 5% 10% 20% 20% 35%;
 	background-color: aquamarine;
 }
-.whole {
-  background-color: white;
-  grid-area: 1/2/2/5
+.header {
+  
+  grid-area: 1/1/2/6
 }
 
 .middle{
   background-color: blueviolet;
-  grid-area: 1/1/4/6;
+	grid-area: 3/2/5/5;
+	justify-content: flex-end;
 }
 .App-logo {
 	animation: App-logo-spin infinite 20s linear;
 	height: 80px;
 }
 
-.App-header {
-	background-color: #222;
-	grid-area: 1/2/4/6;
-	height: 20vh;
-	
-	color: white;
-}
-
-.App-title {
-	font-size: 1.5em;
-}
-
-.App-intro {
-	font-size: large;
-}
-2
 @keyframes App-logo-spin {
 	from {
 		transform: rotate(0deg);
