@@ -1,3 +1,5 @@
+
+
 .App {
 	width: 100vw;
 	height: 100vh;
@@ -15,6 +17,8 @@
   background-color: white;
 	grid-area: 3/2/5/5;
 	border-radius: 2vw;
+ 	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+	
 }
 .footer{
   background-color: black;
@@ -32,4 +36,15 @@
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+.header-scales{
+	margin: 0;
+	grid-area: 3/2/4/4;
+	font-size: 6vw;
+}
+.text-scales{
+	margin-top: 5vh;
+		grid-area: 3/2/4/5;
+		font-size: 3vw;
 }

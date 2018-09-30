@@ -57,7 +57,11 @@ class App extends Component {
 					</header>
 				</div>
 				<div className="middle" />
-				{/* <Link to={}>Sign Up</Link> */}
+				<h2 className="header-scales">Header</h2>
+				<p className="text-scales">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare et erat ut porttitor. Nunc euismod tortor diam, ut fringilla mi volutpat ac. Mauris cursus id arcu vitae viverra. Nulla pellentesque auctor tempus. Nullam dignissim elit eget commodo sodales. Vestibulum eu diam sollicitudin, efficitur mi id, pulvinar quam. Pellentesque volutpat diam vel orci mollis, vel vestibulum lorem hendrerit. Maecenas sit amet gravida diam. Nullam ultricies faucibus tellus.</p>
+				
+				
+				
 				<div className="footer">
 
 				</div>
