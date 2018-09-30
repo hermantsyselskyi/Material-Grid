@@ -3,8 +3,8 @@
 	height: 100vh;
 	display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 5% 10% 20% 20% 35%;
-	background-color: aquamarine;
+  grid-template-rows: 5% 10% 20% 20% 10% 35% ;
+	background-color: rgb(64, 150, 248);
 }
 .header {
   
@@ -12,9 +12,13 @@
 }
 
 .middle{
-  background-color: blueviolet;
+  background-color: white;
 	grid-area: 3/2/5/5;
-	justify-content: flex-end;
+	border-radius: 2vw;
+}
+.footer{
+  background-color: black;
+	grid-area: 6/1/7/6;
 }
 .App-logo {
 	animation: App-logo-spin infinite 20s linear;

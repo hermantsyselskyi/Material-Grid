@@ -12,13 +12,7 @@ import Tab from '@material-ui/core/Tab';
 
 import './jambots';
 
-import React from 'react';
-import {
-  HashRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from 'react-router-dom';
+
 
 const styles = {
 	root: {
@@ -64,7 +58,9 @@ class App extends Component {
 				</div>
 				<div className="middle" />
 				{/* <Link to={}>Sign Up</Link> */}
-				
+				<div className="footer">
+
+				</div>
 			</div>
 		);
 	}
