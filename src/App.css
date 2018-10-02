@@ -1,5 +1,14 @@
 
+.App {
+  display: flex;
+  flex-direction: column;
+	min-height: 100vh;
+	background-color: rgb(64, 150, 248);
+	color: white;
+}
 
+
+@media (min-width: 768px) {
 .App {
 	width: 100vw;
 	height: 100vh;
@@ -7,7 +16,10 @@
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 5% 10% 20% 20% 10% 35% ;
 	background-color: rgb(64, 150, 248);
+	color: black;
 }
+}
+
 .header {
   
   grid-area: 1/1/2/6
