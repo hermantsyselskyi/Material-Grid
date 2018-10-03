@@ -3,25 +3,30 @@
 	width: 100vw;
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 2fr 1fr 1fr;
+	grid-template-columns:  1fr;
+	grid-template-rows: 10% 2fr 1fr;
 	grid-template-areas: 
-	"title title"
-	"middle middle"
-	"header header"
-	"footer footer";
+	"header"
+	"middle"
+	"footer";
 }
-@media screen and (min-width: 400px) {
-	.App {
+@media screen and (min-width: 600px) {
+	.App{
 		width: 100vw;
 		height: 100vh;
 		display: grid;
-		grid-template-columns: 2fr 1fr 1fr;
-		grid-template-rows: 1fr 3fr 1fr;
+		grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 5% 2fr 1fr;
 		grid-template-areas: 
-		"title title title"
-		"middle header header"
-		"middle footer footer";
+		"header header header header header"
+		"leftbar middle middle middle rightbar"
+		"footer footer footer footer footer";
+	}
+	.middle{
+		margin: 5%;
+		border-radius: 2%;
+		background-color: brown;
+		grid-area: middle;
 	}
 }	
 /* .App {
@@ -33,16 +38,29 @@
 	background-color: rgb(64, 150, 248);
 	color: black;
 } */
+.empty {
+	background-color: grey;
+	grid-area: empty;
+}
+.leftbar {
+  background-color: white;
+	grid-area: leftbar;
+}
+.rightbar {
+  background-color: white;
+	grid-area: rightbar;
+}
 
 .header {
   background-color: blue;
-  grid-area: header;
+	grid-area: header;
 }
 .title{
-	background-color: bisque;
+	background-color: orangered;
 	grid-area: title;
 }
 .middle{
+
 	background-color: brown;
 	grid-area: middle;
 }

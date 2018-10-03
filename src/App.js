@@ -37,8 +37,6 @@ class App extends Component {
 		const { classes } = this.props;
 		return (
 			<div className="App">
-			    <div className="title">
-				</div>
 				<div className="header">
 					{/* <header className="App-header">
 						<AppBar position="static">
@@ -57,6 +55,12 @@ class App extends Component {
 							</Paper>
 						</AppBar>
 					</header> */}
+				</div>
+				<div className="empty">
+				</div>
+				<div className="leftbar">
+				</div>
+				<div className="rightbar">
 				</div>
 				<div className="middle">
 				</div>
